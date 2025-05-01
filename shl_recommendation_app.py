@@ -1,23 +1,30 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from pydantic import BaseModel
-from utils import load_assessments, embed_query, search_assessments
+import faiss
+import json
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 app = FastAPI()
 
-# Load assessment data and vector index
-assessments, index, embeddings = load_assessments()
-
 class Query(BaseModel):
     query: str
+
+# Load assessment data
+with open("assessments.json", "r") as f:
+    assessments = json.load(f)
+
+# Load model and build vector index
+model = SentenceTransformer("all-MiniLM-L6-v2")
+descriptions = [a["description"] for a in assessments]
+embeddings = model.encode(descriptions)
+index = faiss.IndexFlatL2(embeddings.shape[1])
+index.add(np.array(embeddings))
 
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
 
-@app.post("/recommend")
-def recommend(query: Query):
-    top_results = search_assessments(query.query, embeddings, assessments, index)
-    return {"recommendations": top_results}
 @app.post("/recommend")
 def recommend(query: Query):
     query_vec = model.encode([query.query])
@@ -28,9 +35,9 @@ def recommend(query: Query):
 
     for idx in indices[0]:
         a = assessments[idx]
-        unique_key = a["name"] + a["url"]
-        if unique_key not in seen:
-            seen.add(unique_key)
+        key = a["name"] + a["url"]
+        if key not in seen:
+            seen.add(key)
             results.append({
                 "name": a["name"],
                 "url": a["url"],
