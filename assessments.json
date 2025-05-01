@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Cognitive Ability Test",
+      "url": "https://www.shl.com/test/cognitive/",
+      "remote": "Yes",
+      "adaptive": "Yes",
+      "duration": "30 mins",
+      "type": "Cognitive",
+      "description": "Tests problem-solving and logical reasoning for analyst roles."
+    }
+  ]
+  
