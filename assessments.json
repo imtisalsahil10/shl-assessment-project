@@ -1,13 +1,3 @@
-[
-  {
-    "name": "Cognitive Ability Test",
-    "url": "https://www.shl.com/test/cognitive/",
-    "remote": "Yes",
-    "adaptive": "Yes",
-    "duration": "30 mins",
-    "type": "Cognitive",
-    "description": "Evaluates problem-solving, logic, and reasoning skills."
-  },
   {
     "name": "Personality and Motivation Assessment",
     "url": "https://www.shl.com/test/personality/",
