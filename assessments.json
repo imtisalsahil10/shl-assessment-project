@@ -1,4 +1,5 @@
-  {
+[
+{
     "name": "Personality and Motivation Assessment",
     "url": "https://www.shl.com/test/personality/",
     "remote": "Yes",
@@ -79,3 +80,4 @@
     "type": "Administrative",
     "description": "Tests attention to detail and accuracy in clerical tasks."
   }
+]
