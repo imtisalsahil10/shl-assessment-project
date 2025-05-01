@@ -1,12 +1,92 @@
 [
-    {
-      "name": "Cognitive Ability Test",
-      "url": "https://www.shl.com/test/cognitive/",
-      "remote": "Yes",
-      "adaptive": "Yes",
-      "duration": "30 mins",
-      "type": "Cognitive",
-      "description": "Tests problem-solving and logical reasoning for analyst roles."
-    }
-  ]
-  
+  {
+    "name": "Cognitive Ability Test",
+    "url": "https://www.shl.com/test/cognitive/",
+    "remote": "Yes",
+    "adaptive": "Yes",
+    "duration": "30 mins",
+    "type": "Cognitive",
+    "description": "Evaluates problem-solving, logic, and reasoning skills."
+  },
+  {
+    "name": "Personality and Motivation Assessment",
+    "url": "https://www.shl.com/test/personality/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "25 mins",
+    "type": "Personality",
+    "description": "Assesses behavioral traits, teamwork, and motivation alignment."
+  },
+  {
+    "name": "Programming Skills Test",
+    "url": "https://www.shl.com/test/programming/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "45 mins",
+    "type": "Technical",
+    "description": "Tests software engineering skills in Python, Java, and debugging."
+  },
+  {
+    "name": "Situational Judgment Test",
+    "url": "https://www.shl.com/test/sjt/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "20 mins",
+    "type": "Behavioral",
+    "description": "Measures decision-making and judgment in workplace scenarios."
+  },
+  {
+    "name": "Numerical Reasoning Test",
+    "url": "https://www.shl.com/test/numerical/",
+    "remote": "Yes",
+    "adaptive": "Yes",
+    "duration": "35 mins",
+    "type": "Cognitive",
+    "description": "Tests numerical problem-solving and quantitative analysis."
+  },
+  {
+    "name": "Verbal Reasoning Test",
+    "url": "https://www.shl.com/test/verbal/",
+    "remote": "Yes",
+    "adaptive": "Yes",
+    "duration": "30 mins",
+    "type": "Cognitive",
+    "description": "Assesses reading comprehension and logical conclusions."
+  },
+  {
+    "name": "Data Analysis Assessment",
+    "url": "https://www.shl.com/test/data-analysis/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "40 mins",
+    "type": "Technical",
+    "description": "Evaluates skills in analyzing, interpreting, and visualizing data."
+  },
+  {
+    "name": "Sales Potential Assessment",
+    "url": "https://www.shl.com/test/sales/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "30 mins",
+    "type": "Sales",
+    "description": "Identifies candidates' sales instincts, persuasion, and motivation."
+  },
+  {
+    "name": "Leadership Potential Assessment",
+    "url": "https://www.shl.com/test/leadership/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "50 mins",
+    "type": "Behavioral",
+    "description": "Evaluates strategic thinking, people leadership, and agility."
+  },
+  {
+    "name": "Clerical Checking Test",
+    "url": "https://www.shl.com/test/clerical/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "20 mins",
+    "type": "Administrative",
+    "description": "Tests attention to detail and accuracy in clerical tasks."
+  }
+]
